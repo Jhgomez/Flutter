@@ -12,4 +12,9 @@ void main(List<String> arguments) {
   isTrue = true;
   isTrueTwo = true;
   isTrueTwo = "";
+
+  // number is the supperclass and it has only two child int and double only
+  num numero = 9;
+  int integer = 89;
+  double doble = 3.3;
 }
