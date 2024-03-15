@@ -1,5 +1,5 @@
-import 'package:DartBasics/DartBasics.dart' as untitled3;
+import 'package:DartBasics/DartBasics.dart' as dart_basics;
 
 void main(List<String> arguments) {
-  print('Hello world: ${untitled3.calculate()}!');
+  print('Hello world: ${dart_basics.calculate()}!');
 }
