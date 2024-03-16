@@ -1,3 +1,6 @@
+import 'dart:ffi';
+import 'dart:js_util';
+
 import 'package:dart_basics/DartBasics.dart' as dart_basics;
 import 'dart:io';
 import 'dart:async';
@@ -32,4 +35,19 @@ void main(List<String> arguments) {
   name!.isEmpty ? stderr.write('name is empty') : stdout.write('Hello $name\r\n');
   // name?.isEmpty ? stderr.write('Name is empty') : stdout.write('Hello $name \r\n');
 
+  //Collections
+
+  //Lists
+    // THERE IS NO ARRAYS IN DART
+    // two ways of creating a list
+    var numbers = [1,2,3,4];
+    List<int> listNumbers = <int>[];
+    // If a type is not specified and add a different type,
+    // 'dynamic' type will be inferred
+    List dynamicList = [1,2];
+    dynamicList.add("value");
+    // This creates a dynamic type list
+    List inferredDynamic = [];
+    inferredDynamic.add("");
+    inferredDynamic.add(2);
 }
