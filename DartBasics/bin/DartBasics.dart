@@ -2,6 +2,11 @@ import 'package:dart_basics/DartBasics.dart' as dart_basics;
 import 'dart:io';
 import 'dart:async';
 
+enum colors {
+  red,
+  blue
+}
+
 void main(List<String> arguments) {
   print('Hello world: ${dart_basics.calculate()}!');
 
@@ -26,4 +31,5 @@ void main(List<String> arguments) {
 
   name!.isEmpty ? stderr.write('name is empty') : stdout.write('Hello $name\r\n');
   // name?.isEmpty ? stderr.write('Name is empty') : stdout.write('Hello $name \r\n');
+
 }
