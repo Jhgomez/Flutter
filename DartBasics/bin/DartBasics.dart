@@ -50,4 +50,11 @@ void main(List<String> arguments) {
     List inferredDynamic = [];
     inferredDynamic.add("");
     inferredDynamic.add(2);
+
+  // Sets
+    // two ways of creating a list
+    var numberSet = { 1, 2, 3, 4};
+    Set<int> numberSet2 = {};
+    var actuallyAMap = {}; // this will actually create a map
+
 }
