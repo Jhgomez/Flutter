@@ -109,5 +109,7 @@ void main(List<String> arguments) {
     for(int i = 0; i < numbers.length; i++) {
       print(numbers.elementAt(i));
     }
-    numbers.forEach((element) { print(element); });
+    numbers.forEach((element) { print(element); }); // however this is not recommended after Dart 2.0
+    for (var element in numbers) { print(element); } // this is how it should look like instead
 }
+
