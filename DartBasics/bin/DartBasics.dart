@@ -66,4 +66,10 @@ void main(List<String> arguments) {
     var myMap = { 'one' : 1, 'two' : 2 };
     var myMap2 = {};
     var myMap3 = <String, int>{};
+
+// Flow Control
+  // Assert
+    assert(myMap3.isEmpty); // throws exception if false
+
+
 }
