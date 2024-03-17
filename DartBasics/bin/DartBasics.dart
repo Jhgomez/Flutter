@@ -100,8 +100,14 @@ void main(List<String> arguments) {
 
     myLogic = 0;
 
-  while (myLogic < 3) {
-    print('My value $myLogic');
-    myLogic += 1;
-  };
+    while (myLogic < 3) {
+      print('My value $myLogic');
+      myLogic += 1;
+    };
+
+    // for
+    for(int i = 0; i < numbers.length; i++) {
+      print(numbers.elementAt(i));
+    }
+    numbers.forEach((element) { print(element); });
 }
