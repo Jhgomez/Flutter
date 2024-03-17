@@ -55,9 +55,15 @@ void main(List<String> arguments) {
   // Sets
     var numberSet = { 1, 2, 3, 4};
     Set<int> numberSet2 = {};
+    var numberSet3 = <int>{};
     var actuallyAMap = {}; // this will actually create a map
 
   // Queue
     var myQueue = Queue(); // Dynamic type
     var typedQueue = Queue<String>();
+
+  // Maps
+    var myMap = { 'one' : 1, 'two' : 2 };
+    var myMap2 = {};
+    var myMap3 = <String, int>{};
 }
