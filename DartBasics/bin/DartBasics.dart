@@ -78,4 +78,17 @@ void main(List<String> arguments) {
     3;
   }
 
+  colors myColor = colors.blue;
+  // switch
+  // a switch can take any type of variable
+  switch(myColor) {
+    case colors.blue: {
+      print('blue');
+      break;
+    }
+    case colors.red: {
+      print('red');
+      break;
+    }
+  }
 }
