@@ -111,5 +111,14 @@ void main(List<String> arguments) {
     }
     numbers.forEach((element) { print(element); }); // however this is not recommended after Dart 2.0
     for (var element in numbers) { print(element); } // this is how it should look like instead
+
+  // when calling an function with different optional parameters
+  // you have to specify what parameter you are assigning value to
+  sayHello(second: 'yo');
 }
 
+// brackets {} or [] indicates the parameter is optional, and an optional parameter
+// has to have a default value assigned to it
+void sayHello({String name = '', String second = ''}) {
+  print('Hello $name $second');
+}
