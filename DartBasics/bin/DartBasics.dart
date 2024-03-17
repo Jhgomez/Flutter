@@ -1,6 +1,4 @@
 import 'dart:collection';
-import 'dart:ffi';
-import 'dart:js_util';
 
 import 'package:dart_basics/DartBasics.dart' as dart_basics;
 import 'dart:io';
@@ -91,4 +89,19 @@ void main(List<String> arguments) {
       break;
     }
   }
+
+  var myLogic = 1;
+  // Loops
+    // While
+    do {
+      print('My value $myLogic');
+      myLogic += 1;
+    } while (myLogic < 3);
+
+    myLogic = 0;
+
+  while (myLogic < 3) {
+    print('My value $myLogic');
+    myLogic += 1;
+  };
 }
