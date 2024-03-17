@@ -109,5 +109,24 @@ void main(List<String> arguments) {
     for(int i = 0; i < numbers.length; i++) {
       print(numbers.elementAt(i));
     }
-    numbers.forEach((element) { print(element); });
+    numbers.forEach((element) { print(element); }); // however this is not recommended after Dart 2.0
+    for (var element in numbers) { print(element); } // this is how it should look like instead
+
+  // when calling an function with different named parameters
+  // you have to specify what parameter you are assigning value to, only
+  // named parameters can be declared using its name
+  sayHello(second: 'yo');
+  // We can assign values from functions just as in Java
+  var sayIt = sayHello(name: 'Me');
+
+  // the compiler won't complain with this anonymous function syntax
+  numbers.forEach(print);
+}
+
+// brackets {} indicates named and [] indicates the parameter is optional, named/optional parameter
+// has to have a default value assigned to it, a function can have both, positional parameters
+// and named/optional parameters. Positional parameters have to be declared before optional
+String sayHello({String name = '', String second = ''}) {
+  print('Hello $name $second');
+  return name;
 }
