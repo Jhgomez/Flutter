@@ -118,6 +118,9 @@ void main(List<String> arguments) {
   sayHello(second: 'yo');
   // We can assign values from functions just as in Java
   var sayIt = sayHello(name: 'Me');
+
+  // the compiler won't complain with this anonymous function syntax
+  numbers.forEach(print);
 }
 
 // brackets {} indicates named and [] indicates the parameter is optional, named/optional parameter
