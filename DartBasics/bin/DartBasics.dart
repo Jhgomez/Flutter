@@ -121,6 +121,19 @@ void main(List<String> arguments) {
 
   // the compiler won't complain with this anonymous function syntax
   numbers.forEach(print);
+
+  // In dart there is a "on" block, additionally to "try", "catch" and "finally"
+  // blocks, in this block we can declare an specific error and it has to be located
+  // before the catch block
+  try {
+    print('1');
+  } on NoSuchMethodError {
+    print("specific");
+  } catch (e) {
+    print("2");
+  } finally {
+    print("finally");
+  }
 }
 
 // brackets {} indicates named and [] indicates the parameter is optional, named/optional parameter
