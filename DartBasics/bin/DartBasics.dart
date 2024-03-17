@@ -71,5 +71,11 @@ void main(List<String> arguments) {
   // Assert
     assert(myMap3.isEmpty); // throws exception if false
 
+  // if
+  if (myMap3.isEmpty) {
+    1;
+  } else {
+    3;
+  }
 
 }
