@@ -127,12 +127,13 @@ void main(List<String> arguments) {
   // before the catch block
   try {
     print('1');
+    throw Exception('my exception');
   } on NoSuchMethodError {
-    print("specific");
+    print('specific');
   } catch (e) {
-    print("2");
+    print('2');
   } finally {
-    print("finally");
+    print('finally');
   }
 }
 
