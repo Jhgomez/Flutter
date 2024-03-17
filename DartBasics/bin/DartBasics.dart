@@ -116,11 +116,14 @@ void main(List<String> arguments) {
   // you have to specify what parameter you are assigning value to, only
   // named parameters can be declared using its name
   sayHello(second: 'yo');
+  // We can assign values from functions just as in Java
+  var sayIt = sayHello(name: 'Me');
 }
 
 // brackets {} indicates named and [] indicates the parameter is optional, named/optional parameter
 // has to have a default value assigned to it, a function can have both, positional parameters
 // and named/optional parameters. Positional parameters have to be declared before optional
-void sayHello({String name = '', String second = ''}) {
+String sayHello({String name = '', String second = ''}) {
   print('Hello $name $second');
+  return name;
 }
